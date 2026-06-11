@@ -1,0 +1,199 @@
+/* LEAF - Luxury Black & Green Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 920px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 6.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00ff41, #00cc33, #00ff41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 12px;
+    text-shadow: 0 0 60px rgba(0, 255, 65, 0.6);
+    margin-bottom: 8px;
+}
+
+.made-by {
+    font-size: 1.35rem;
+    color: #00ff41;
+    letter-spacing: 4px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* Script Box */
+.script-box {
+    background: rgba(15, 15, 15, 0.95);
+    border: 2px solid #00ff41;
+    border-radius: 20px;
+    padding: 40px 35px;
+    margin: 50px auto;
+    box-shadow: 0 25px 70px rgba(0, 255, 65, 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.script {
+    font-family: 'Courier New', monospace;
+    font-size: 1.08rem;
+    color: #00ff41;
+    background: #000000;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 25px;
+    border: 1px solid #003300;
+    word-break: break-all;
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.copy-btn {
+    background: linear-gradient(90deg, #00ff41, #00cc33);
+    color: #000;
+    border: none;
+    padding: 16px 48px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 35px rgba(0, 255, 65, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.copy-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 20px 45px rgba(0, 255, 65, 0.5);
+}
+
+/* Discord Button */
+.discord-btn {
+    background: #5865f2;
+    color: white;
+    border: none;
+    padding: 18px 56px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 35px 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
+}
+
+.discord-btn:hover {
+    background: #4752c4;
+    transform: translateY(-5px);
+}
+
+/* Supported Executors */
+.supported {
+    margin: 55px 0 40px;
+}
+
+.supported h2 {
+    color: #00ff41;
+    font-size: 1.8rem;
+    margin-bottom: 22px;
+    letter-spacing: 2px;
+}
+
+.executors {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.executor {
+    background: #1a1a1a;
+    color: #00ff41;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 1.5px solid #00ff41;
+    font-size: 1.15rem;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(0, 255, 65, 0.1);
+}
+
+/* Features */
+.features {
+    margin: 70px 0;
+    text-align: left;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h2 {
+    color: #00ff41;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+}
+
+.feature-list {
+    columns: 2;
+    gap: 50px;
+}
+
+.feature-item {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-item:before {
+    content: "◆";
+    color: #00ff41;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 90px;
+    color: #444;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Subtle luxury hover glow */
+button, .executor {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
